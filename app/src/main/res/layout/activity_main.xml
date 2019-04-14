@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#F2F2F2">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#34C6F5"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -23,7 +25,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="goodoc" />
+            android:text="goodoc"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="40dp"
@@ -31,5 +36,96 @@
             android:src="@mipmap/ic_launcher" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#34C6F5"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="굿닥 이벤트존" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="상담 가능 병원" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="테마병원" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="마이페이지" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:hint="병원명, 질병 키워드로 병원찾기"
+            android:paddingLeft="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Copyright Goodoc"/>
 
 </LinearLayout>
